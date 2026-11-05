@@ -13,6 +13,10 @@ background CPU.
 
 I am the publisher of this software, and the binary is signed by me.
 
+"Verified" here means every value below can be checked against the file you downloaded, with the
+commands further down — not a store listing, and not a badge. If they match, the binary came from me
+and nobody changed it since.
+
 | | |
 |---|---|
 | Authenticode subject | `CN=BharathDeva, O=BharathDeva` |
@@ -41,7 +45,8 @@ unmodified; you can install the certificate as a trusted root to make the warnin
 
 ## Quick start
 
-1. **Download** `WildBoost.exe` from this repository (it is committed here, next to this README).
+1. **Download** [`WildBoost.exe`](https://github.com/BharathDeva1174/wild-boost/raw/main/WildBoost.exe)
+   — it is committed here, next to this README, so that link is the file itself.
 2. **Check it** against the SHA-256 above if you want to be sure nothing changed in transit.
 3. **Run it.** It asks for administrator rights — that is not decoration, the cache-release calls
    it makes are privileged. Accept the UAC prompt.
