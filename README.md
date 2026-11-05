@@ -7,6 +7,9 @@ lets an application release, shows you the pressure that is really holding the m
 gives you reversible controls for the things that cost more than RAM: startup entries, disk space,
 background CPU.
 
+**Download:** [WildBoost.exe — release v1.0.0.0](https://github.com/BharathDeva1174/wild-boost/releases/latest)
+(2.1 MB, code-signed; the asset carries the SHA-256 below).
+
 ---
 
 ## Verified publisher
@@ -45,8 +48,9 @@ unmodified; you can install the certificate as a trusted root to make the warnin
 
 ## Quick start
 
-1. **Download** [`WildBoost.exe`](https://github.com/BharathDeva1174/wild-boost/raw/main/WildBoost.exe)
-   — it is committed here, next to this README, so that link is the file itself.
+1. **Download** [`WildBoost.exe`](https://github.com/BharathDeva1174/wild-boost/releases/latest/download/WildBoost.exe)
+   from the **Releases** section — that link is the signed release asset itself, so it always gives
+   you the newest build without a page in between.
 2. **Check it** against the SHA-256 above if you want to be sure nothing changed in transit.
 3. **Run it.** It asks for administrator rights — that is not decoration, the cache-release calls
    it makes are privileged. Accept the UAC prompt.
