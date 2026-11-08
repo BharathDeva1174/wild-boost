@@ -7,8 +7,8 @@ lets an application release, shows you the pressure that is really holding the m
 gives you reversible controls for the things that cost more than RAM: startup entries, disk space,
 background CPU.
 
-**Download:** [WildBoost.exe — release v1.0.0.0](https://github.com/BharathDeva1174/wild-boost/releases/latest)
-(2.1 MB, code-signed; the asset carries the SHA-256 below).
+**Download:** [WildBoost.exe — release v1.1.0.0](https://github.com/BharathDeva1174/wild-boost/releases/latest)
+(2.21 MB, code-signed; the asset carries the SHA-256 below).
 
 ---
 
@@ -25,8 +25,8 @@ and nobody changed it since.
 | Authenticode subject | `CN=BharathDeva, O=BharathDeva` |
 | Certificate SHA-1 thumbprint | `52DCDF8571CD528A165BB089E57FA83618E3C229` |
 | Strong-name public key token | `99d2cb19424c8911` |
-| Version / file | `1.0.0.0`, 2,166,120 bytes |
-| SHA-256 of `WildBoost.exe` | `af338067ae4d507f52e8ac52308ff50c6accf4ae25ac54767b0bd3a297ae9b9c` |
+| Version / file | `1.1.0.0`, 2,214,760 bytes |
+| SHA-256 of `WildBoost.exe` | `c9da2dc6f4295f722cc4ddcffb15b6498162bba93dc97a003ab8068d787df7e6` |
 | Licence | GPL-3.0-or-later, text embedded inside the executable |
 
 Check it yourself, in PowerShell:
@@ -63,6 +63,27 @@ Requires Windows 10 or 11, 64-bit, and **.NET Framework 4.8** (already present o
 Windows 10/11 install — nothing else to install).
 
 ---
+
+## What is new in 1.1.0.0
+
+- **Why is it slow now.** One ranked sentence from live counters — `% Processor Utility`, processor
+  queue, disk queue and idle time, hard faults, commit — with the values printed beside it and the
+  process leading the disk ranking. When nothing is wrong it says so, and says a flush would change
+  nothing. A verdict has to hold for two samples before it replaces the previous one.
+- **Disk health.** Temperature, wear, power-on hours and error counts per drive, from the same
+  counters Windows uses for its own drive-health page.
+- **Startup impact.** Windows' own boot timings for each startup entry, so the list is ordered by
+  measured cost instead of by name.
+- **Power and sleep.** Last wake source, armed wake timers, sleep blockers and battery state from
+  `powercfg`, plus a one-click battery report.
+- **Reliability.** Unexpected shutdowns, application crashes and a pending restart, read from the
+  operating system's own logs.
+- **Export report, export/import settings.** Everything the window shows in one text file for a bug
+  report; settings move between machines as a tab-separated text file.
+
+Two of these sources (drive reliability counters and boot timings) need administrator rights, which
+the app already requires. Where Windows refuses a counter, the card says so instead of showing a
+zero.
 
 ## Usage
 
