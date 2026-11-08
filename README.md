@@ -7,8 +7,8 @@ lets an application release, shows you the pressure that is really holding the m
 gives you reversible controls for the things that cost more than RAM: startup entries, disk space,
 background CPU.
 
-**Download:** [WildBoost.exe — release v1.1.0.0](https://github.com/BharathDeva1174/wild-boost/releases/latest)
-(2.21 MB, code-signed; the asset carries the SHA-256 below).
+**Download:** [WildBoost.exe — release v1.2.0.0](https://github.com/BharathDeva1174/wild-boost/releases/latest)
+(2.23 MB, code-signed; the asset carries the SHA-256 below).
 
 ---
 
@@ -25,8 +25,8 @@ and nobody changed it since.
 | Authenticode subject | `CN=BharathDeva, O=BharathDeva` |
 | Certificate SHA-1 thumbprint | `52DCDF8571CD528A165BB089E57FA83618E3C229` |
 | Strong-name public key token | `99d2cb19424c8911` |
-| Version / file | `1.1.0.0`, 2,214,760 bytes |
-| SHA-256 of `WildBoost.exe` | `c9da2dc6f4295f722cc4ddcffb15b6498162bba93dc97a003ab8068d787df7e6` |
+| Version / file | `1.2.0.0`, 2,228,584 bytes |
+| SHA-256 of `WildBoost.exe` | `9ea3ce7a5c76174bd3295dc5e5cf47c3817701c455a7fda5406be27c5806b81b` |
 | Licence | GPL-3.0-or-later, text embedded inside the executable |
 
 Check it yourself, in PowerShell:
@@ -63,6 +63,18 @@ Requires Windows 10 or 11, 64-bit, and **.NET Framework 4.8** (already present o
 Windows 10/11 install — nothing else to install).
 
 ---
+
+## What is new in 1.2.0.0
+
+- **A window, not a column.** A section rail moves between Overview, Memory, Storage, Startup,
+  Graphics, Power & battery, Reliability, Settings and Advanced. Each page uses the full width with
+  columns instead of one long stack, switching fades the incoming page in over 220 ms, and the
+  action bar - free memory, run progress, Optimize - stays visible on every page.
+- **Battery health.** Design capacity against a full charge, plus charge cycles and chemistry, read
+  from the battery driver itself. On the publisher's machine: 64,249 mWh full against 90,006 mWh
+  design, 71 %. A pack that publishes no design capacity says so instead of claiming 100 %.
+- **Quieter.** Rebuilding the shell exposed that a full-width ambient gauge cost 0.170 cores; it now
+  measures 0.005, and it stops animating when the window is not active.
 
 ## What is new in 1.1.0.0
 
