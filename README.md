@@ -7,7 +7,7 @@ lets an application release, shows you the pressure that is really holding the m
 gives you reversible controls for the things that cost more than RAM: startup entries, disk space,
 background CPU.
 
-**Download:** [WildBoost.exe — release v1.2.1.0](https://github.com/BharathDeva1174/wild-boost/releases/latest)
+**Download:** [WildBoost.exe — release v1.2.2.0](https://github.com/BharathDeva1174/wild-boost/releases/latest)
 (2.23 MB, code-signed; the asset carries the SHA-256 below).
 
 ---
@@ -25,8 +25,8 @@ and nobody changed it since.
 | Authenticode subject | `CN=BharathDeva, O=BharathDeva` |
 | Certificate SHA-1 thumbprint | `52DCDF8571CD528A165BB089E57FA83618E3C229` |
 | Strong-name public key token | `99d2cb19424c8911` |
-| Version / file | `1.2.1.0`, 2,228,584 bytes |
-| SHA-256 of `WildBoost.exe` | `0e954318865ff380d3720c7b8418c34aaa3b3c084cd034cc92a67b99309ff1be` |
+| Version / file | `1.2.2.0`, 2,228,584 bytes |
+| SHA-256 of `WildBoost.exe` | `35f5bba7471716b1eff5ad6631d7b1a5f4decee96b271042c4880f577e67840d` |
 | Licence | GPL-3.0-or-later, text embedded inside the executable |
 
 Check it yourself, in PowerShell:
